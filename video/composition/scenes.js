@@ -255,7 +255,7 @@
         const p = prog(t, .3 + i * .12, .9 + i * .12, ease.outExpo);
         set(tl, { o: p, y: (1 - p) * 60, s: .96 + .04 * p });
         const c = $('.cnt', tl);
-        c.textContent = String(Math.round(+c.dataset.to * prog(t, .4 + i * .12, 1.3 + i * .12, ease.out)));
+        if (c) c.textContent = String(Math.round(+c.dataset.to * prog(t, .4 + i * .12, 1.3 + i * .12, ease.out)));
       });
       this.rows.forEach((rw, i) => { const p = prog(t, 1.5 + i * .15, 2.0 + i * .15, ease.outExpo); set(rw, { o: p, x: (1 - p) * 40 }); });
       const ex = prog(t, len('facts') - .45, len('facts') - .05, ease.in); set(this.r, { o: 1 - ex, y: -ex * 50 });
@@ -294,19 +294,23 @@
     init() {
       const r = $('#dates'); this.r = r;
       this.eb = $('.eyebrow', r); this.h = $('.h', r); this.track = $('.spine', r); this.spine = $('.spine i', r); this.items = $$('.item', r);
+      // the spine runs from the first node to the last; each segment fills as its date is spoken
+      const tops = this.items.map(it => it.offsetTop);
+      this.track.style.height = `${tops[tops.length - 1] - tops[0]}px`;
+      this.seg = tops.slice(1).map((y, i) => (y - tops[i]) / (tops[tops.length - 1] - tops[0]));
     },
     update(t) {
       const pe = prog(t, .02, .5, ease.outExpo); set(this.eb, { o: pe, y: (1 - pe) * 20 });
       const ph = prog(t, .1, .64, ease.outExpo); set(this.h, { o: ph, y: (1 - ph) * 40 });
       set(this.track, { o: prog(t, .6, 1.0) });
-      const when = [cue('dates', 'date1', 1.55), cue('dates', 'date2', 3.9)];      // each date arrives as it is spoken
-      set(this.spine, { sy: prog(t, when[1] - .4, when[1] + .05, ease.inOut) });
+      const when = this.items.map((_, i) => cue('dates', `date${i + 1}`, .3 + 2.2 * i));      // each date arrives as it is spoken
+      set(this.spine, { sy: this.seg.reduce((s, f, i) => s + f * prog(t, when[i + 1] - .4, when[i + 1] + .05, ease.inOut), 0) });
       this.items.forEach((it, i) => {
         const a = when[i];
         const node = $('.node', it);
         const pn = prog(t, a, a + .35, ease.outBack);
         set(node, { o: clamp(pn * 2), s: .4 + .6 * pn });
-        node.style.background = mix(PAPER, i ? '#B23ACB' : '#B4373D', prog(t, a + .1, a + .4));
+        node.style.background = mix(PAPER, ['#B4373D', '#B33884', '#B23ACB'][i % 3], prog(t, a + .1, a + .4));
         [...it.children].filter(c => c !== node).forEach((c, k) => {
           const p = prog(t, a + .05 + k * .1, a + .55 + k * .1, ease.outExpo);
           set(c, { o: p, x: (1 - p) * 40 });

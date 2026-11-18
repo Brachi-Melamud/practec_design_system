@@ -49,7 +49,9 @@
 
   const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   /** caption markup: *accent* → <em> */
-  const capHTML = text => esc(text).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+  const capHTML = text => (V.nowrap || []).reduce(       // phrases listed in content.js "nowrap" never break across lines
+    (h, p) => h.split(esc(p)).join(`<span style="white-space:nowrap">${esc(p)}</span>`),
+    esc(text).replace(/\*([^*]+)\*/g, '<em>$1</em>'));
 
   /** split text into word spans (for kinetic type). *accent* words get class "acc". */
   function words(el, text) {

@@ -1,4 +1,4 @@
-/* Practec · FDE + DevOps Bootcamp — marketing video script (single source for text + timing).
+/* Practec · DevOps Bootcamp + FDE Practitioner — marketing video script (single source for text + timing).
 
    scenes    start/end in seconds, on the beat of the 120 bpm music (whole seconds; 2 s = one bar).
              tools/music.py follows the scenes; the animations in scenes.js are scene-relative.
@@ -10,13 +10,15 @@
              "hero" shown as the big opening typography instead of the caption strip.
              "id"   lets a picture or sound follow this caption (see "cue" below and scenes.js).
              start/end are written by tools/voiceover.py from the voice's word timings — do not edit by hand.
+   nowrap    phrases a caption must never break inside (the programme name).
    sfx       sound cues: seconds after the scene start, or after the caption named by "cue".
    cta       end-card button. Leave "url" empty until there is a real public page — nothing is invented.
 
    The Python tools read everything after the assignment below as strict JSON:
    double quotes only, no comments or trailing commas inside the object, one caption per line. */
 window.VIDEO = {
-  "title": "Practec FDE + DevOps Bootcamp",
+  "title": "Practec DevOps Bootcamp + FDE Practitioner",
+  "nowrap": ["+ FDE Practitioner", "FDE Practitioner", "DevOps Bootcamp", "של Practec להייטק."],
   "fps": 30,
   "duration": 44.0,
   "bpm": 120,
@@ -41,16 +43,16 @@ window.VIDEO = {
   "captions": [
     {"scene": "hook",   "start": 0.06,   "end": 1.59,   "hero": true, "text": "את כבר יודעת לבנות תוכנה."},
     {"scene": "hook",   "start": 1.59,   "end": 3.95,  "hero": true, "text": "מוכנה להביא פתרונות עד *לפרודקשן?*"},
-    {"scene": "brand",  "start": 4.36,   "end": 8.33,   "text": "הכירי את FDE + DevOps Bootcamp של Practec להייטק.", "say": "הכירי את FDE פלוס DevOps Bootcamp של Practec להייטק."},
-    {"scene": "build",  "start": 10.43,  "end": 14.46,  "text": "שנים עשר שבועות של FDE, פתרונות AI, ענן ו-DevOps", "say": "שנים עשר שבועות של FDE, פתרונות AI, ענן ו-DevOps,"},
-    {"scene": "build",  "start": 14.46,  "end": 17.13, "text": "עם פרויקטים מעשיים *מקצה לקצה.*"},
-    {"scene": "facts",  "start": 18.30,  "end": 21.50,  "text": "*64 שעות* מפגש, תרגול וליווי מקצועי.", "say": "שישים וארבע שעות מפגש, תרגול וליווי מקצועי."},
-    {"scene": "facts",  "start": 21.50,  "end": 23.85,  "text": "עד *20 משתתפות* נבחרות.", "say": "עד עשרים משתתפות נבחרות."},
+    {"scene": "brand",  "start": 4.30,   "end": 9.21,   "text": "הכירי את DevOps Bootcamp + FDE Practitioner של Practec להייטק.", "say": "הכירי את DevOps Bootcamp פלוס FDE Practitioner של Practec להייטק."},
+    {"scene": "build",  "start": 10.30,  "end": 12.22,  "text": "*8 שבועות* של DevOps Bootcamp,", "say": "שמונה שבועות של DevOps Bootcamp,"},
+    {"scene": "build",  "start": 12.22,  "end": 17.21,  "text": "ו-*6 שבועות* של FDE Practitioner — *עד לפרודקשן אצל לקוח אמיתי.*", "say": "ושישה שבועות של FDE Practitioner, עד לפרודקשן אצל לקוח אמיתי."},
+    {"scene": "facts",  "start": 18.29,  "end": 21.18,  "text": "הרצאה שבועית ו-*6 שעות* עבודת צוות על הפרויקט.", "say": "הרצאה שבועית ושש שעות עבודת צוות על הפרויקט."},
+    {"scene": "facts",  "start": 21.18,  "end": 23.53,  "text": "עד *20 משתתפות* נבחרות.", "say": "עד עשרים משתתפות נבחרות."},
     {"scene": "career", "start": 24.29,  "end": 26.54,  "text": "המסלול כולל *הכנה מקצועית לקריירה.*"},
     {"scene": "career", "start": 26.54,  "end": 29.93,  "id": "notice", "text": "הקבלה מותנית במיון; אין התחייבות להשמה.", "say": "הקבלה מותנית במיון. אין התחייבות להשמה."},
-    {"scene": "dates",  "start": 30.28,  "end": 32.52,  "text": "מחזור *נובמבר 2026.*", "say": "מחזור נובמבר אלפיים עשרים ושש."},
-    {"scene": "dates",  "start": 32.52,  "end": 35.32,  "id": "date1", "text": "מתחילות בתהליך המיון *ב-19 בנובמבר,*", "say": "מתחילות בתהליך המיון בתשעה עשר בנובמבר,"},
-    {"scene": "dates",  "start": 35.32,  "end": 38.95,  "id": "date2", "text": "ויום ההערכה יתקיים *ב-25 בנובמבר.*", "say": "ויום ההערכה יתקיים בעשרים וחמישה בנובמבר."},
+    {"scene": "dates",  "start": 30.30,  "end": 33.26,  "id": "date1", "text": "משימת המיון מתפרסמת *ב-29 בנובמבר,*", "say": "משימת המיון מתפרסמת בעשרים ותשעה בנובמבר,"},
+    {"scene": "dates",  "start": 33.26,  "end": 35.66,  "id": "date2", "text": "וההגשה עד *6 בדצמבר.*", "say": "וההגשה עד השישה בדצמבר."},
+    {"scene": "dates",  "start": 35.66,  "end": 38.49,  "id": "date3", "text": "הקורס נפתח *ב-13 בדצמבר.*", "say": "הקורס נפתח בשלושה עשר בדצמבר."},
     {"scene": "end",    "start": 39.30, "end": 41.73,  "text": "בדקי התאמה *והגישי מועמדות.*"}
   ],
   "sfx": [
@@ -84,6 +86,7 @@ window.VIDEO = {
     {"scene": "career", "at": 5.55,  "type": "swoosh"},
     {"cue": "date1",    "at": 0.0,   "type": "blip"},
     {"cue": "date2",    "at": 0.0,   "type": "blip"},
+    {"cue": "date3",    "at": 0.0,   "type": "blip"},
     {"scene": "dates",  "at": 8.0,   "type": "riser", "dur": 1.0},
     {"scene": "end",    "at": 0.02,  "type": "impact", "gain": 0.8},
     {"scene": "end",    "at": 0.8,   "type": "pop"},

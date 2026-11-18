@@ -1,4 +1,4 @@
-# Practec · FDE + DevOps Bootcamp — marketing video
+# Practec · DevOps Bootcamp + FDE Practitioner — marketing video
 
 A 44-second motion-graphics video for the bootcamp, built from `../course-creative-brief.md`.
 Campaign line: **לא רק לפתח. להביא פתרונות לפרודקשן.**
@@ -78,21 +78,25 @@ After a render the preview also plays the soundtrack.
   application section is the `#apply` anchor.)
 - **Scene lengths:** keep scene boundaries on whole seconds (the music is 120 bpm, one bar per 2 s, and follows
   the scene list). After changing a length, run `voiceover.py` again so the captions move with it.
-- **Course facts** appear in `index.html` (scenes 4–7). They follow `../course-creative-brief.md`, with two
-  later changes from the owner: the hours are shown as 64 hours = 12 × 3 session hours + practice, and the AIOps
-  continuation is shown with its lecturer (גל חבקין) and without a price.
+- **Course facts** appear in `index.html` (scenes 4–7) and follow `../course-creative-brief.md`: the programme
+  name DevOps Bootcamp + FDE Practitioner, and the admissions schedule 29 Nov → 6 Dec → course opens 13 Dec 2026.
+  The two courses are separate: DevOps Bootcamp (8 weeks, ₪4,500) and FDE Practitioner (6 weeks, ₪4,500), with a
+  2.5-hour weekly lecture and 6 hours of weekly team work. The AIOps continuation is shown with its lecturer (גל חבקין)
+  and without a price, as the owner asked for the video.
+- **Caption line breaks:** phrases listed under `"nowrap"` in `content.js` (the programme name) never break
+  across caption lines.
 
 ## Timeline
 
 | Time | Scene | Picture | Voice-over = caption |
 |---|---|---|---|
 | 0–4 s | `hook` | Code and a terminal running on `localhost`, then a "production ?" target | את כבר יודעת לבנות תוכנה. · מוכנה להביא פתרונות עד לפרודקשן? |
-| 4–10 s | `brand` | Logo, "FDE + DevOps Bootcamp", campaign line | הכירי את FDE + DevOps Bootcamp של Practec להייטק. |
-| 10–18 s | `build` | One system in five stages: צורך עסקי → תכנון הפתרון → בנייה עם AI → פריסה לענן → פרודקשן | שנים עשר שבועות של FDE, פתרונות AI, ענן ו-DevOps · עם פרויקטים מעשיים מקצה לקצה. |
-| 18–24 s | `facts` | 12 weeks · 64 hours of sessions and practice · 12 × 3 session hours + practice · up to 20 participants; days, hours, planned location | 64 שעות מפגש, תרגול וליווי מקצועי. · עד 20 משתתפות נבחרות. |
+| 4–10 s | `brand` | Logo, "DevOps Bootcamp + FDE Practitioner", campaign line | הכירי את DevOps Bootcamp + FDE Practitioner של Practec להייטק. |
+| 10–18 s | `build` | One system in five stages: צורך עסקי → תכנון הפתרון → בנייה עם AI → פריסה לענן → פרודקשן | 8 שבועות של DevOps Bootcamp, · ו-6 שבועות של FDE Practitioner — עד לפרודקשן אצל לקוח אמיתי. |
+| 18–24 s | `facts` | Two courses, 14 weeks: DevOps Bootcamp 8 weeks · FDE Practitioner 6 weeks · 2.5 + 6 hours a week (lecture + team work) · up to 20 participants; days, hours, planned location | הרצאה שבועית ו-6 שעות עבודת צוות על הפרויקט. · עד 20 משתתפות נבחרות. |
 | 24–30 s | `career` | What the track includes; optional AIOps continuation with its lecturer; selection and "אין התחייבות להשמה" | המסלול כולל הכנה מקצועית לקריירה. · הקבלה מותנית במיון; אין התחייבות להשמה. |
-| 30–39 s | `dates` | 19.11 selection fee + assignment (350 ₪, non-refundable if not accepted) · 25.11 assessment day | מחזור נובמבר 2026. · מתחילות בתהליך המיון ב-19 בנובמבר, · ויום ההערכה יתקיים ב-25 בנובמבר. |
-| 39–44 s | `end` | Logo, programme, organisation, CTA, tuition and selection fee with its qualifier | בדקי התאמה והגישי מועמדות. |
+| 30–39 s | `dates` | 29.11 screening assignment published (selection fee 350 ₪, non-refundable if not accepted) · 6.12 submission, after the practice-and-assessment week · 13.12 course opens | משימת המיון מתפרסמת ב-29 בנובמבר, · וההגשה עד 6 בדצמבר. · הקורס נפתח ב-13 בדצמבר. |
+| 39–44 s | `end` | Logo, programme, organisation, CTA, ₪4,500 per course (two separate rows), selection fee with its qualifier | בדקי התאמה והגישי מועמדות. |
 
 The first two lines are shown as large opening typography instead of the caption strip.
 

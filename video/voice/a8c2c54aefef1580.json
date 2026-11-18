@@ -1,0 +1,84 @@
+{
+ "text": "שמונה שבועות של DevOps Bootcamp, ושישה שבועות של FDE Practitioner, עד לפרודקשן אצל לקוח אמיתי.",
+ "voice": "p7J75VowGmxi3K0it9lN",
+ "model": "eleven_v4",
+ "prefix": "[rapid-fire, energetic]",
+ "seed": null,
+ "words": [
+  {
+   "text": "שמונה",
+   "start": 0.08,
+   "end": 0.4
+  },
+  {
+   "text": "שבועות",
+   "start": 0.48,
+   "end": 0.8
+  },
+  {
+   "text": "של",
+   "start": 0.88,
+   "end": 0.96
+  },
+  {
+   "text": "DevOps",
+   "start": 1.04,
+   "end": 1.36
+  },
+  {
+   "text": "Bootcamp,",
+   "start": 1.44,
+   "end": 1.96
+  },
+  {
+   "text": "ושישה",
+   "start": 2.0,
+   "end": 2.4
+  },
+  {
+   "text": "שבועות",
+   "start": 2.48,
+   "end": 2.88
+  },
+  {
+   "text": "של",
+   "start": 2.96,
+   "end": 3.04
+  },
+  {
+   "text": "FDE",
+   "start": 3.2,
+   "end": 3.44
+  },
+  {
+   "text": "Practitioner,",
+   "start": 3.52,
+   "end": 4.32
+  },
+  {
+   "text": "עד",
+   "start": 4.48,
+   "end": 4.64
+  },
+  {
+   "text": "לפרודקשן",
+   "start": 4.72,
+   "end": 5.28
+  },
+  {
+   "text": "אצל",
+   "start": 5.32,
+   "end": 5.52
+  },
+  {
+   "text": "לקוח",
+   "start": 5.68,
+   "end": 5.84
+  },
+  {
+   "text": "אמיתי.",
+   "start": 5.92,
+   "end": 6.56
+  }
+ ]
+}
