@@ -1,0 +1,54 @@
+{
+ "text": "הכירי את FDE פלוס DevOps Bootcamp של Practec להייטק.",
+ "voice": "p7J75VowGmxi3K0it9lN",
+ "model": "eleven_v4",
+ "prefix": "[rapid-fire, energetic]",
+ "seed": null,
+ "words": [
+  {
+   "text": "הכירי",
+   "start": 0.145,
+   "end": 0.4
+  },
+  {
+   "text": "את",
+   "start": 0.48,
+   "end": 0.56
+  },
+  {
+   "text": "FDE",
+   "start": 0.72,
+   "end": 1.12
+  },
+  {
+   "text": "פלוס",
+   "start": 1.16,
+   "end": 1.36
+  },
+  {
+   "text": "DevOps",
+   "start": 1.44,
+   "end": 1.76
+  },
+  {
+   "text": "Bootcamp",
+   "start": 1.84,
+   "end": 2.16
+  },
+  {
+   "text": "של",
+   "start": 2.24,
+   "end": 2.4
+  },
+  {
+   "text": "Practec",
+   "start": 2.44,
+   "end": 2.8
+  },
+  {
+   "text": "להייטק.",
+   "start": 2.88,
+   "end": 3.68
+  }
+ ]
+}

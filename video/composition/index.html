@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-format="9x16">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practec Bootcamp Video</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="viewport">
+<div id="stage">
+
+  <!-- Backgrounds: stacked layers, revealed by the transitions in scenes.js -->
+  <div id="bgs">
+    <div class="bg dark"><div class="art"></div></div>
+    <div class="bg light"><div class="art"></div></div>
+    <div class="bg dark"><div class="art"></div></div>
+    <div class="bg light"><div class="art"></div></div>
+  </div>
+
+  <!-- 1 · HOOK — code that already runs on localhost, and the question of production -->
+  <section class="scene" id="hook">
+    <div class="blk head"><div class="hero"></div></div>
+    <div class="blk vis">
+      <div class="window" dir="ltr">
+        <div class="win-bar"><i></i><i></i><i></i><span class="win-title">app.py</span></div>
+        <div class="code">
+          <span class="ln"><span class="tk-d">@app</span>.<span class="tk-f">get</span>(<span class="tk-s">"/orders"</span>)</span>
+          <span class="ln"><span class="tk-k">def</span> <span class="tk-f">orders</span>(user: User):</span>
+          <span class="ln">    <span class="tk-k">return</span> db.orders(user.id)</span>
+          <span class="cursor"></span>
+        </div>
+        <div class="term">
+          <span class="ln"><span class="tk-p">$</span> python -m app</span>
+          <span class="ln"><span class="ok">✓</span> running on <b>localhost:8000</b></span>
+        </div>
+      </div>
+      <div class="wire"></div>
+      <div class="env-pill" dir="ltr"><i class="ring"></i><span>production</span><b>?</b></div>
+    </div>
+  </section>
+
+  <!-- 2 · BRAND — logo (colour version on a light surface), programme name, campaign line -->
+  <section class="scene" id="brand">
+    <div class="blk vis">
+      <div class="logo-c"><img src="../../assets/practec-logo.svg" alt="Practec"></div>
+      <h1 class="title" dir="ltr"><span class="mask"><span class="l">FDE <span class="plus">+</span> DevOps</span></span><span class="mask"><span class="l">Bootcamp</span></span></h1>
+      <p class="tagline">
+        <span class="tl"><span class="w">לא</span> <span class="w">רק</span> <span class="w">לפתח.</span></span>
+        <span class="tl"><span class="w">להביא</span> <span class="w">פתרונות</span> <span class="w"><span class="u">לפרודקשן</span>.</span></span>
+      </p>
+      <p class="sub">בוטקאמפ מעשי וסלקטיבי למפתחות תוכנה</p>
+    </div>
+  </section>
+
+  <!-- 3 · BUILD — business need → solution design → AI build → cloud deployment → production -->
+  <section class="scene" id="build">
+    <div class="blk head">
+      <div class="step" dir="ltr"><span class="n">01</span> / 05</div>
+      <div class="titles">
+        <h2>צורך עסקי</h2><h2>תכנון הפתרון</h2><h2>בנייה עם AI</h2><h2>פריסה לענן</h2><h2>פרודקשן</h2>
+      </div>
+      <div class="progress"><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span></div>
+    </div>
+    <div class="blk vis diagram" dir="ltr">
+      <svg class="dg" viewBox="0 0 900 580" width="900" height="580" aria-hidden="true">
+        <defs>
+          <linearGradient id="g-brand" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#B4373D"/><stop offset="1" stop-color="#B23ACB"/>
+          </linearGradient>
+        </defs>
+        <path class="box-dash" data-rr="16,4,652,372,28"/>
+        <path class="box-solid" data-rr="16,4,652,372,28" pathLength="1"/>
+        <path class="rag-fill" data-cyl="240,200,200,96,18"/>
+        <path class="sk" data-rr="480,30,160,80,18" pathLength="1"/>
+        <path class="sk" data-rr="260,30,160,80,18" pathLength="1"/>
+        <path class="sk" data-rr="40,30,160,80,18" pathLength="1"/>
+        <path class="sk" data-cyl="240,200,200,96,18" pathLength="1"/>
+        <path class="pk-path" id="pk-main" d="M790 70 H110"/>
+        <path class="pk-path" id="pk-rag" d="M340 70 V250"/>
+        <g class="packets"><circle r="9"/><circle r="9"/><circle r="9"/><circle r="9"/><circle r="9"/><circle r="8"/><circle r="8"/></g>
+        <path class="cn" d="M700 70 H648" pathLength="1"/><path class="ah" d="M655 61 L645 70 L655 79"/>
+        <path class="cn" d="M480 70 H428" pathLength="1"/><path class="ah" d="M435 61 L425 70 L435 79"/>
+        <path class="cn" d="M260 70 H208" pathLength="1"/><path class="ah" d="M215 61 L205 70 L215 79"/>
+        <path class="cn" d="M340 110 V186" pathLength="1"/><path class="ah" d="M331 179 L340 189 L349 179"/>
+        <path class="cn link" d="M640 478 H580" pathLength="1"/>
+        <path class="cn link" d="M360 478 H300" pathLength="1"/>
+        <path class="spark" d="M704 368 L726 356 L748 362 L770 344 L792 350 L814 332 L836 338 L858 322 L880 328" pathLength="1"/>
+      </svg>
+
+      <div class="ticket">
+        <div class="tk-stack"></div><div class="tk-stack"></div>
+        <div class="tk-card" dir="rtl">
+          <div class="tk-top"><i></i><span dir="ltr">#1042 · open</span></div>
+          <div class="tk-title">פניות לקוחות נערמות</div>
+          <div class="tk-body">התשובות מפוזרות בין מסמכים, והצוות מחפש ידנית.</div>
+        </div>
+      </div>
+
+      <div class="node input" style="left:700px;top:30px;width:190px;height:80px">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h5l1.5 3h5L16 13h5M5 5h14l2 8v6H3v-6z"/></svg><span dir="rtl">פניות</span>
+      </div>
+      <div class="node nd" style="left:480px;top:30px;width:160px;height:80px"><i class="fill"></i><span>API</span></div>
+      <div class="node nd agent" style="left:260px;top:30px;width:160px;height:80px"><i class="fill"></i><span>Agent</span></div>
+      <div class="node nd" style="left:40px;top:30px;width:160px;height:80px"><i class="fill"></i><span>LLM</span></div>
+      <div class="rag-lbl" style="left:240px;top:226px;width:200px">RAG</div>
+      <div class="rag-cap" dir="rtl" style="left:200px;top:318px;width:280px">מסמכי הארגון</div>
+
+      <div class="code-card">
+        <span class="ln"><span class="tk-d">@app</span>.<span class="tk-f">post</span>(<span class="tk-s">"/answer"</span>)</span>
+        <span class="ln"><span class="tk-k">def</span> <span class="tk-f">answer</span>(q: Question):</span>
+        <span class="ln">    docs = rag.<span class="tk-f">search</span>(q.text)</span>
+        <span class="ln">    <span class="tk-k">return</span> agent.<span class="tk-f">run</span>(q, docs)</span>
+      </div>
+
+      <div class="chip docker">Docker</div>
+      <div class="ci-label">CI/CD · GitHub Actions</div>
+      <div class="ci" style="left:640px"><span class="st"><svg viewBox="0 0 24 24"><circle class="spin" cx="12" cy="12" r="9"/><path class="tick" d="M7 12.5l3.2 3.2L17 9"/></svg></span>build</div>
+      <div class="ci" style="left:360px"><span class="st"><svg viewBox="0 0 24 24"><circle class="spin" cx="12" cy="12" r="9"/><path class="tick" d="M7 12.5l3.2 3.2L17 9"/></svg></span>test</div>
+      <div class="ci" style="left:80px"><span class="st"><svg viewBox="0 0 24 24"><circle class="spin" cx="12" cy="12" r="9"/><path class="tick" d="M7 12.5l3.2 3.2L17 9"/></svg></span>deploy</div>
+
+      <div class="live"><i class="pulse"></i><i class="dot"></i>Live</div>
+      <div class="ok200">200 OK</div>
+    </div>
+  </section>
+
+  <!-- 4 · FACTS — the programme as a production dashboard -->
+  <section class="scene" id="facts">
+    <div class="blk head">
+      <div class="eyebrow" dir="ltr">FDE + DevOps Bootcamp</div>
+      <h2 class="h">התוכנית במספרים</h2>
+    </div>
+    <div class="blk vis tiles">
+      <div class="tile"><span class="tag">weeks</span><div class="num"><span class="cnt" data-to="12">12</span></div><div class="lbl">שבועות</div></div>
+      <div class="tile"><span class="tag">hours</span><div class="num"><span class="cnt" data-to="64">64</span></div><div class="lbl">שעות מפגש ותרגול</div></div>
+      <div class="tile"><span class="tag">sessions</span><div class="num"><span class="mul" dir="ltr"><span class="cnt" data-to="12">12</span><i>×</i>3</span></div><div class="lbl">שעות מפגש + תרגול</div></div>
+      <div class="tile accent"><span class="tag">seats</span><div class="num"><small>עד</small><span class="cnt" data-to="20">20</span></div><div class="lbl">משתתפות נבחרות</div></div>
+    </div>
+    <div class="blk aux sched">
+      <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>ימי ראשון ו/או רביעי · <bdi dir="ltr">17:00–21:00</bdi></span></div>
+      <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>מיקום מתוכנן: נחלאות, ירושלים</span></div>
+    </div>
+  </section>
+
+  <!-- 5 · CAREER — what the track includes, and honest expectations -->
+  <section class="scene" id="career">
+    <div class="blk head">
+      <div class="eyebrow">מעבר לקוד</div>
+      <h2 class="h">מה כולל המסלול</h2>
+    </div>
+    <div class="blk vis checks">
+      <div class="ck"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6.5 12.5l3.6 3.6L17.5 8.5"/></svg></span><span class="tx">פרויקטים מעשיים מקצה לקצה</span></div>
+      <div class="ck"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6.5 12.5l3.6 3.6L17.5 8.5"/></svg></span><span class="tx">הכנה מקצועית לקריירה</span></div>
+      <div class="ck opt"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 7v10M7 12h10"/></svg></span><span class="tx">המשך AIOps <small>(אופציונלי)</small></span><span class="meta">מרצה: גל חבקין</span></div>
+    </div>
+    <div class="blk aux notice">
+      <span class="ic">i</span>
+      <p>הקבלה בתהליך מיון:<br>מטלת בית ויום הערכה מקצועי.<br><b>אין התחייבות להשמה.</b></p>
+    </div>
+  </section>
+
+  <!-- 6 · DATES — the November 2026 selection timeline -->
+  <section class="scene" id="dates">
+    <div class="blk head">
+      <div class="eyebrow">תהליך המיון</div>
+      <h2 class="h">מחזור נובמבר 2026</h2>
+    </div>
+    <div class="blk vis timeline">
+      <div class="spine"><i></i></div>
+      <div class="item"><span class="node"></span>
+        <div class="when"><b dir="ltr">19.11</b><span>יום חמישי</span></div>
+        <div class="what">תשלום דמי מיון וקבלת משימת המיון</div>
+        <div class="fine">350 ₪ · דמי המיון אינם ניתנים להחזר במקרה של אי־קבלה</div>
+      </div>
+      <div class="item"><span class="node"></span>
+        <div class="when"><b dir="ltr">25.11</b><span>יום רביעי</span></div>
+        <div class="what">יום הערכה מקצועי</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · END CARD — logo, programme, CTA, costs with their qualifiers -->
+  <section class="scene" id="end">
+    <div class="blk vis endcard">
+      <div class="logo-c"><img src="../../assets/practec-logo.svg" alt="Practec"></div>
+      <div class="title" dir="ltr">FDE + DevOps Bootcamp</div>
+      <div class="org">Practec להייטק (ע״ר)</div>
+      <div class="cta"><span class="lbl"></span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><i class="shine"></i></div>
+      <div class="cta-note"></div>
+    </div>
+    <div class="blk aux prices">
+      <div class="card">
+        <div class="pr"><span class="k">שכר לימוד</span><span class="v">4,500 ₪</span></div>
+        <div class="pr"><span class="k">דמי מיון והערכה<small>אינם ניתנים להחזר במקרה של אי־קבלה</small></span><span class="v">350 ₪</span></div>
+      </div>
+      <p class="foot">מנויי AI וענן לתרגול אינם כלולים · אין התחייבות להשמה</p>
+    </div>
+  </section>
+
+  <div id="captions"><div class="cap" dir="rtl"></div></div>
+  <div id="wipe-edge"></div>
+  <div id="grain"></div>
+  <div id="safe"></div>
+</div>
+</div>
+
+<!-- Preview controls (hidden when rendering) -->
+<div id="ui">
+  <button id="play" type="button" aria-label="Play / pause">▶</button>
+  <input id="scrub" type="range" min="0" step="0.001" value="0" aria-label="Time">
+  <span id="clock">0.00</span>
+  <select id="fmt" aria-label="Format"><option value="9x16">9:16</option><option value="16x9">16:9</option></select>
+  <label><input id="safe-t" type="checkbox"> safe zones</label>
+</div>
+
+<script src="content.js"></script>
+<script src="engine.js"></script>
+<script src="scenes.js"></script>
+</body>
+</html>

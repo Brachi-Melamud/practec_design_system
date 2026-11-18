@@ -1,0 +1,29 @@
+{
+ "text": "בדקי התאמה והגישי מועמדות.",
+ "voice": "p7J75VowGmxi3K0it9lN",
+ "model": "eleven_v4",
+ "prefix": "[rapid-fire, energetic]",
+ "seed": null,
+ "words": [
+  {
+   "text": "בדקי",
+   "start": 0.08,
+   "end": 0.32
+  },
+  {
+   "text": "התאמה",
+   "start": 0.4,
+   "end": 0.8
+  },
+  {
+   "text": "והגישי",
+   "start": 0.88,
+   "end": 1.28
+  },
+  {
+   "text": "מועמדות.",
+   "start": 1.36,
+   "end": 2.08
+  }
+ ]
+}

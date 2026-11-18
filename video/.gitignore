@@ -1,0 +1,6 @@
+build/
+__pycache__/
+.venv/
+.env
+# rendered videos: rebuild with tools/render.py (free; the paid voice lines are cached in voice/)
+output/*.mp4

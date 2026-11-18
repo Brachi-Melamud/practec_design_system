@@ -1,0 +1,5 @@
+# Python packages for video/tools/render.py and music.py (Google Chrome must be installed)
+playwright>=1.40
+numpy>=1.24
+pillow>=10.0
+imageio-ffmpeg>=0.4.9   # bundled ffmpeg; optional if ffmpeg is already on PATH
